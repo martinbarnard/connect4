@@ -1,0 +1,35 @@
+<html>
+<head>
+</head>
+<body>
+    <h1>Connect 4 blobby davro</h1>
+<div>
+    {% block content %}
+    <h1>Content Here</h1>
+    {% endblock %}
+</div>
+<div style="float:right;">
+    {% block sidebar_r %}
+
+        <div>
+            {% block topbit %}
+                <ul>
+                    <li>Top right</li>
+                    <li>has fun</li>
+                    <li>things</li>
+                </ul>
+            {% endblock %}
+        </div>
+        <div>
+            {% block middlebit %}
+                <div><h4>Middle Bit</h4></div>
+            {% endblock %}
+        </div>
+        <div>
+            {% block bottombit %}
+            {% endblock %}
+        </div>
+
+    {% endblock %}
+</div>
+</body>

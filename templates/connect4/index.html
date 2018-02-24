@@ -1,0 +1,9 @@
+{% if latest_games %}
+    <ul> 
+    {% for game in latest_games %}
+        <li><a href="{% url 'connect4:games' game.id %}" />{{ game }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <h2>No active games</h2>
+{% endif %}
