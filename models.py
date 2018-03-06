@@ -82,7 +82,7 @@ class Game(models.Model):
             if n >= 3:
                 return True
         return False
-
+    
     def is_nbr(self, depth, player, coords):
         '''
         Will return how many matches from our array were hits.

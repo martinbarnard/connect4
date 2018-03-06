@@ -8,10 +8,9 @@ app_name = 'connect4'
 # Play sets up a game which will be visible in the games url
 # join will what happens when you join a game.
 urlpatterns = [
-    path('',        views.IndexView.as_view(), name='games'),
-    path('login/',  views.login),
+    path('',        views.index),
+    path('index/',  views.index),
     path('signup/', views.signup),
     path('logout/', views.LogoutView.as_view(), name='logout'),
-    path('games/',  views.GamesView.as_view(), name='games'),
-    path('play/<int:pk>',   views.play),
+    path('games/',  views.game),
 ]
